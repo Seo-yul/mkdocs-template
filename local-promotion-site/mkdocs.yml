@@ -1,0 +1,88 @@
+site_name: 우리 지역 홍보 사이트
+site_description: 아름다운 우리 지역을 소개하는 공식 홍보 페이지
+site_author: 지역 관광청
+
+# Repository
+# repo_name: local-promotion-site
+# repo_url: https://github.com/your-username/local-promotion-site
+
+# Theme
+theme:
+  name: material
+  language: ko
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 전환
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 전환
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+# Navigation
+nav:
+  - 홈: index.md
+  - 지역 소개:
+    - 개요: about/overview.md
+    - 역사: about/history.md
+    - 지리: about/geography.md
+  - 관광 명소:
+    - 자연 명소: attractions/nature.md
+    - 문화 유적: attractions/culture.md
+    - 체험 활동: attractions/activities.md
+  - 맛집 & 특산품:
+    - 지역 맛집: food/restaurants.md
+    - 특산품: food/specialties.md
+  - 축제 & 이벤트:
+    - 연중 축제: events/festivals.md
+    - 계절별 이벤트: events/seasonal.md
+  - 교통 & 숙박:
+    - 교통 안내: travel/transportation.md
+    - 숙박 시설: travel/accommodation.md
+  - 연락처: contact.md
+  - 🛠️ 개발자: CONTRIBUTE.md
+
+# Plugins
+plugins:
+  - search:
+      lang: ko
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/your-local-page
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/your-local-page
+    - icon: fontawesome/solid/envelope
+      link: mailto:info@yourlocal.gov
+
+copyright: Copyright &copy; 2024 우리 지역 관광청
